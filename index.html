@@ -9,34 +9,31 @@
 </head>
 <body>
     <div class="main-container">
-        <div class="image">
-            <h1>Sign-Up Form</h1>
+        <div class="left-container">
             <!--Photo by <a href="https://unsplash.com/@coleito?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Cole Keister</a> on <a href="https://unsplash.com/photos/vsvqdUL_Y8o?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>-->
-            <img src="image.jpg" alt="view from window" width="25%">
+            <img src="image.jpg" alt="view from window">
         </div>
-        <div class="form">
-            <form>
+        <div class="right-container">
+            <div>
+                <p>This is not a real online service! You know you need something</p>
+                <p>like this in your life to help you realize your deepest dreams.</p>
+                <p>Sign up now to get started.</p>
+
+            </div>
+            <form action="https://formsubmit.co/exmail@duck.com" method="POST">
                 <div>
-                    <input type="text" id="fname" name="firstName" placeholder="FIRST NAME" required>
+                    <input type="text" id="fname" name="firstName" placeholder="FIRST NAME*" required>
+                    <input type="text" id="lname" name="lastName" placeholder="LAST NAME*" required>
                 </div>
                 <div>
-                    <input type="text" id="lname" name="lastName" placeholder="LAST NAME" required>
+                    <input type="email" id="mail" name="userMail" placeholder="EMAIL*" required>
+                    <input type="tel" id="contact" name="contactNumber" placeholder="CONTACT NO">
                 </div>
                 <div>
-                    <input type="email" id="mail" name="userMail" placeholder="EMAIL" required>
+                    <input type="password" id="pwd" name="password" placeholder="PASSWORD*" required>
+                    <input type="password" id="samepwd" name="password" placeholder="CONFIRM PASSWORD*" required>
                 </div>
-                <div>
-                    <input type="tel" id="contact" name="contactNumber" placeholder="CONTACT NO.">
-                </div>
-                <div>
-                    <input type="password" id="pwd" name="password" placeholder="PASSWORD" required>
-                </div>
-                <div>
-                    <input type="password" id="samepwd" name="password" placeholder="CONFIRM PASSWORD" required>
-                </div>
-                <div>
                     <button class="btn">Sign up</button>
-                </div>
             </form>
         </div>
     </div>
